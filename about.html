@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Wed Jun 24 2020 12:31:22 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="5dfb4bb2d19f962cbc57349a" data-wf-site="5dc84e40205897366c85917d">
+<html>
 <head>
   <meta charset="utf-8">
   <title>About</title>
@@ -12,6 +12,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/gr-food.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic:latin,cyrillic,cyrillic-ext,latin-ext","Alice:regular:latin,cyrillic,cyrillic-ext","Noto Sans:regular,italic,700,700italic:cyrillic-ext,latin","Noto Serif:regular,italic,700,700italic:cyrillic,cyrillic-ext,latin,latin-ext"]  }});</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
@@ -200,7 +201,7 @@
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5dc84e40205897366c85917d" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
@@ -247,31 +248,59 @@
   }
 </style>
   <script>
-  var menuOnPage = new Swiper ('.swiper-container', {
-    // Optional parameters
-   	slidesPerView: 5,
-    spaceBetween: 0,
-    loop: true,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+  var menuOnPage = new Swiper('.swiper-container', {
+  // Optional parameters
+  slidesPerView: 5,
+  spaceBetween: 0,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
     },
-  })
-  var menuFixed = new Swiper ('.swiper-container_fixed', {
-    // Optional parameters
-   	slidesPerView: 7,
-    spaceBetween: 0,
-    loop: true,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next_fixed',
-      prevEl: '.swiper-button-prev_fixed',
+    640: {
+      slidesPerView: 2,
     },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  }
   })
-  var moreProducts = new Swiper ('.swiper-container_products', {
+  var menuFixed = new Swiper('.swiper-container_fixed', {
+  // Optional parameters
+  slidesPerView: 7,
+  spaceBetween: 0,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+  nextEl: '.swiper-button-next_fixed',
+  prevEl: '.swiper-button-prev_fixed',
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  }
+  })
+  var moreProducts = new Swiper('.swiper-container_products', {
     // Optional parameters
-   	slidesPerView: 3,
+    slidesPerView: 3,
     spaceBetween: 0,
     loop: true,
     // Navigation arrows
@@ -279,66 +308,77 @@
       nextEl: '.swiper-button-next_products',
       prevEl: '.swiper-button-prev_products',
     },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+    }
   })
-    var ResEventGalery = new Swiper ('.swiper-container_res-gallery', {
+  var ResEventGalery = new Swiper('.swiper-container_res-gallery', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    effect: 'fade',
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next_res-gallery',
+    prevEl: '.swiper-button-prev_res-gallery',
+    },
+    // pagination
+    pagination: {
+    el: '.swiper-pagination_res-gallery',
+    clickable: true,
+    },
+  })
+  var ResEventGalery = new Swiper('.swiper-container_main-slider', {
     // Optional parameters
     loop: true,
     effect: 'fade',
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next_res-gallery',
-      prevEl: '.swiper-button-prev_res-gallery',
-      },
+    nextEl: '.swiper-button-next_main-slider',
+    prevEl: '.swiper-button-prev_main-slider',
+    },
     // pagination
     pagination: {
-        el: '.swiper-pagination_res-gallery',
-      	clickable: true,
-      },
+    el: '.swiper-pagination_main-slider',
+    clickable: true,
+    },
   })
-    var ResEventGalery = new Swiper ('.swiper-container_main-slider', {
+  var ResEventGalery = new Swiper('.swiper-container_content-slider', {
     // Optional parameters
     loop: true,
     effect: 'fade',
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next_main-slider',
-      prevEl: '.swiper-button-prev_main-slider',
-      },
+    nextEl: '.swiper-button-next_content-slider',
+    prevEl: '.swiper-button-prev_content-slider',
+    },
     // pagination
     pagination: {
-        el: '.swiper-pagination_main-slider',
-      	clickable: true,
-      },
+    el: '.swiper-pagination_content-slider',
+    clickable: true,
+    },
   })
-  var ResEventGalery = new Swiper ('.swiper-container_content-slider', {
-    // Optional parameters
-    loop: true,
-    effect: 'fade',
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next_content-slider',
-      prevEl: '.swiper-button-prev_content-slider',
-      },
-    // pagination
-    pagination: {
-        el: '.swiper-pagination_content-slider',
-      	clickable: true,
-      },
-  })
-  var ResEventGalery = new Swiper ('.swiper-container_review-slider', {
+  var ResEventGalery = new Swiper('.swiper-container_review-slider', {
     // Optional parameters
     loop: true,
     effect: 'slide',
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next_review-slider',
-      prevEl: '.swiper-button-prev_review-slider',
-      },
+    nextEl: '.swiper-button-next_review-slider',
+    prevEl: '.swiper-button-prev_review-slider',
+    },
     // pagination
     pagination: {
-        el: '.swiper-pagination_review-slider',
-      	clickable: true,
-      },
+    el: '.swiper-pagination_review-slider',
+    clickable: true,
+    },
   })
   </script>
   <script>
