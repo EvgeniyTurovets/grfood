@@ -1,0 +1,57 @@
+.event-item-container:hover .event-heading-block{
+	background-color: rgba(255,255,255, 0.75);
+	border-color: rgba(0,0,0,0);
+}
+.event-img{
+	transition: 0.5s ease-in-out;
+}
+.event-heading-block{
+	transition: 0.5s ease-in-out;
+}
+.h3_events{
+	transition: 0.5s ease-in-out;
+}
+.event-item-container:hover .h3_events{
+	color: rgb(9, 20, 33);
+}
+.event-item-container:hover .event-img{
+	transform: scale(1.1);
+}
+.sub-menu{
+	display: none;
+}
+.menu-item:hover > .sub-menu{
+	display: block;
+}
+.up-down-arrow{
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.up-down-arrow.uparrow{
+	transform: translate3d(0px, -130px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.opened-cart{
+	display: none;
+	opacity: 1;
+}
+.cart-order-select-icon{
+	top: 17px;
+}
+.cart-order-select-inner{
+	display: none;
+	opacity: 1;
+}
+.cart-order-select-inner-_sub-select{
+	display: none;
+	opacity: 1;
+}
+.menu-item-link:hover{
+	color: inherit;
+}
+@media(min-width: 1024px){
+	.menu-item-link:hover{
+		color: #fff;
+	}
+}

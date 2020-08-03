@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Wed Jun 24 2020 12:31:22 GMT+0000 (Coordinated Universal Time)  -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant</title>
+  <meta content="Restaurant" property="og:title">
+  <meta content="Restaurant" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/gr-food.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic:latin,cyrillic,cyrillic-ext,latin-ext","Alice:regular:latin,cyrillic,cyrillic-ext","Noto Sans:regular,italic,700,700italic:cyrillic-ext,latin","Noto Serif:regular,italic,700,700italic:cyrillic,cyrillic-ext,latin,latin-ext"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+<body class="body">
+  <div id="top-page" class="link-to-top-block"></div>
+  <div class="fixed-elements">
+    <div class="up-down-arrow up-down-arrow_w-round-bg up-down-arrow_up">
+      <div class="direction-arrow direction-arrow_up w-embed"><svg width="14" height="24" viewbox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 1L7 23M7 23L1 17.15M7 23L13 17.15" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><a href="#top-page" class="direction-up w-inline-block"></a></div>
+  </div>
+  <div class="opened-cart">
+    <div class="cart-block">
+      <div class="js-close-cart">
+        <div class="close-icon w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="white"></path>
+</svg></div>
+      </div>
+      <div data-simplebar="1" class="cart-container">
+        <h1 class="h3 h3_light h3_cart">Ваш заказ</h1>
+        <div class="cart-order w-container">
+          <div class="cart-item-block">
+            <div class="cart-item w-row">
+              <div class="cart-item-preview w-col w-col-3 w-col-small-3 w-col-tiny-tiny-stack"><img src="images/cart-img_1cart-img.png" alt="" class="cart-item-preview-img"></div>
+              <div class="cart-item-name w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack">
+                <h5 class="cart-item-name-text">Рулеты из баклажанов с грецким орехом</h5>
+                <div class="weight weight_cart">Вес: 150 гр.</div>
+              </div>
+              <div class="cart-item-price w-col w-col-3 w-col-small-3 w-col-tiny-tiny-stack">
+                <div class="count count_cart-item w-row">
+                  <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                    <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11H16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                  </div>
+                  <div class="count-column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                    <div class="count-value">1</div>
+                  </div>
+                  <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                    <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11M16 11H11M11 11V6V16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                  </div>
+                </div>
+                <div class="price price_cart-item">290.00 ₽</div>
+              </div>
+            </div>
+            <div class="cart-item-description">
+              <div class="select-close-icon select-close-icon_close-cart-item-description w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+              <div class="cart-item-description-text">Закуска из обжаренных баклажан, грецких орехов, чеснока, хмели-сунели с добавлением майонеза. Приятного аппетита!</div>
+            </div>
+            <div class="cart-item-delete">
+              <div>Удалить позицию — «Рулеты из баклажанов с грецким орехом»?</div>
+              <div class="cart-delete-buttons w-row">
+                <div class="carte-delete-button-area carte-delete-button-area_left w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="#" class="button button_cart-delete w-button">Удалить</a></div>
+                <div class="carte-delete-button-area carte-delete-button-area_right w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="#" class="button button_cart-delete button_cancel w-button">отмена</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item-block">
+            <div class="cart-item w-row">
+              <div class="cart-item-preview w-col w-col-3 w-col-small-3 w-col-tiny-tiny-stack"><img src="images/cart-img_1cart-img.png" alt="" class="cart-item-preview-img"></div>
+              <div class="cart-item-name w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack">
+                <h5 class="cart-item-name-text">Рулеты из баклажанов с грецким орехом</h5>
+                <div class="weight weight_cart">Вес: 150 гр.</div>
+              </div>
+              <div class="cart-item-price w-col w-col-3 w-col-small-3 w-col-tiny-tiny-stack">
+                <div class="count count_cart-item w-row">
+                  <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                    <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11H16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                  </div>
+                  <div class="count-column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                    <div class="count-value">1</div>
+                  </div>
+                  <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                    <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11M16 11H11M11 11V6V16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                  </div>
+                </div>
+                <div class="price price_cart-item">290.00 ₽</div>
+              </div>
+            </div>
+            <div class="cart-item-description">
+              <div class="select-close-icon select-close-icon_close-cart-item-description w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+              <div class="cart-item-description-text">Закуска из обжаренных баклажан, грецких орехов, чеснока, хмели-сунели с добавлением майонеза. Приятного аппетита!</div>
+            </div>
+          </div>
+          <div class="cart-item-block">
+            <div class="cart-item w-row">
+              <div class="cart-item-preview w-col w-col-3 w-col-small-3 w-col-tiny-tiny-stack"><img src="images/cart-img_1cart-img.png" alt="" class="cart-item-preview-img"></div>
+              <div class="cart-item-name w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack">
+                <h5 class="cart-item-name-text">Рулеты из баклажанов с грецким орехом</h5>
+                <div class="weight weight_cart">Вес: 150 гр.</div>
+              </div>
+              <div class="cart-item-price w-col w-col-3 w-col-small-3 w-col-tiny-tiny-stack">
+                <div class="count count_cart-item w-row">
+                  <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                    <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11H16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                  </div>
+                  <div class="count-column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                    <div class="count-value">1</div>
+                  </div>
+                  <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                    <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11M16 11H11M11 11V6V16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                  </div>
+                </div>
+                <div class="price price_cart-item">290.00 ₽</div>
+              </div>
+            </div>
+            <div class="cart-item-description">
+              <div class="select-close-icon select-close-icon_close-cart-item-description w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+              <div class="cart-item-description-text">Закуска из обжаренных баклажан, грецких орехов, чеснока, хмели-сунели с добавлением майонеза. Приятного аппетита!</div>
+            </div>
+          </div>
+          <div class="cart-then cart-then_old-price w-row">
+            <div class="cart-then-column w-col w-col-8 w-col-small-8 w-col-tiny-tiny-stack">
+              <div class="then-label then-label_old-price">Итого:</div>
+            </div>
+            <div class="cart-then-column w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack">
+              <div class="price price_cart-then price_old-price">290.00 ₽</div>
+            </div>
+          </div>
+          <div class="cart-then w-row">
+            <div class="cart-then-column w-col w-col-8 w-col-small-8 w-col-tiny-tiny-stack">
+              <div class="then-label">Итого со скидкой <span class="then-label_strong">10%</span>:</div>
+            </div>
+            <div class="cart-then-column w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack">
+              <div class="price price_cart-then">290.00 ₽</div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-order-form-block w-form">
+          <form id="wf-form-Order-Form" name="wf-form-Order-Form" data-name="Order Form" class="cart-order-form">
+            <div class="cart-order-form-part"><label for="name" class="form-label cart-order-label">У меня есть промокод:</label>
+              <div class="cart-order-form-columns w-row">
+                <div class="js-cart-order-form-column cart-order-form-column_left w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack"><input type="text" class="form-text-field w-input" autocomplete="off" maxlength="256" name="EnterPromo-2" data-name="Enter Promo 2" placeholder="Введите промокод" id="EnterPromo-2"></div>
+                <div class="js-cart-order-form-column cart-order-form-column_right w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack"><a href="#" class="button button_cart-order-form w-button">Активировать</a></div>
+              </div>
+            </div>
+            <div class="cart-order-form-part">
+              <div class="cart-order-form-columns w-row">
+                <div class="js-cart-order-form-column cart-order-form-column_left w-col w-col-6 w-col-small-6"><label for="name" class="form-label cart-order-label">Дата заказа <span class="form-label_star">*</span>:</label><a href="#" class="cart-order-select-link w-inline-block w-clearfix"><input type="text" class="form-text-field form-text-field_select w-input" autocomplete="off" maxlength="256" name="EnterDate-2" data-name="Enter Date 2" placeholder="Сегодня" id="EnterDate-2" required=""><img src="images/selection-icon.svg" alt="" class="cart-order-select-icon"></a>
+                  <div class="cart-order-select-inner cart-order-select-inner_top-margin">
+                    <div class="select-close-icon select-close-icon_cart-select w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+                    <div class="cart-order-select-inner-text">Сегодня</div>
+                    <div class="cart-order-select-inner-text">Завтра</div>
+                    <div class="cart-order-select-inner-text">1 сентября</div>
+                    <div class="cart-order-select-inner-text">2 сентября</div>
+                    <div class="cart-order-select-inner-text">3 сентября</div>
+                    <div class="cart-order-select-inner-text">4 сентября</div>
+                    <div class="cart-order-select-inner-text">5 сентября</div>
+                  </div>
+                </div>
+                <div class="js-cart-order-form-column cart-order-form-column_right w-col w-col-6 w-col-small-6"><label for="name" class="form-label cart-order-label">Время заказа <span class="form-label_star">*</span>:</label>
+                  <div class="cart-order-form-columns w-row">
+                    <div class="js-cart-order-form-column cart-order-form-column_left cart-order-form-column_hours w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="#" class="cart-order-select-link w-inline-block w-clearfix"><input type="text" class="form-text-field form-text-field_select w-input" maxlength="256" name="EnterHour-2" data-name="Enter Hour 2" placeholder="20" id="EnterHour-2" required=""><img src="images/selection-icon.svg" alt="" class="cart-order-select-icon"></a>
+                      <div class="cart-order-select-inner">
+                        <div class="select-close-icon select-close-icon_cart-select w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+                        <div class="cart-order-select-inner-text">11</div>
+                        <div class="cart-order-select-inner-text">12</div>
+                        <div class="cart-order-select-inner-text">13</div>
+                        <div class="cart-order-select-inner-text">14</div>
+                        <div class="cart-order-select-inner-text">15</div>
+                        <div class="cart-order-select-inner-text">16</div>
+                        <div class="cart-order-select-inner-text">17</div>
+                        <div class="cart-order-select-inner-text">18</div>
+                        <div class="cart-order-select-inner-text">19</div>
+                        <div class="cart-order-select-inner-text">20</div>
+                        <div class="cart-order-select-inner-text">21</div>
+                      </div>
+                    </div>
+                    <div class="js-cart-order-form-column cart-order-form-column_right cart-order-form-column_minutes w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="#" class="cart-order-select-link w-inline-block w-clearfix"><input type="text" class="form-text-field form-text-field_select w-input" maxlength="256" name="EnterMinute-2" data-name="Enter Minute 2" placeholder="50" id="EnterMinute-2" required=""><img src="images/selection-icon.svg" alt="" class="cart-order-select-icon"></a>
+                      <div class="cart-order-select-inner">
+                        <div class="select-close-icon select-close-icon_cart-select w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+                        <div class="cart-order-select-inner-text">11</div>
+                        <div class="cart-order-select-inner-text">12</div>
+                        <div class="cart-order-select-inner-text">13</div>
+                        <div class="cart-order-select-inner-text">14</div>
+                        <div class="cart-order-select-inner-text">15</div>
+                        <div class="cart-order-select-inner-text">16</div>
+                        <div class="cart-order-select-inner-text">17</div>
+                        <div class="cart-order-select-inner-text">18</div>
+                        <div class="cart-order-select-inner-text">19</div>
+                        <div class="cart-order-select-inner-text">20</div>
+                        <div class="cart-order-select-inner-text">21</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-order-form-part"><label for="name" class="form-label cart-order-label">Введите способ доставки<span class="form-label_star">*</span>:</label>
+              <div class="cart-order-form-columns w-row">
+                <div class="cart-order-form-column cart-order-form-column_left w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack"><label data-w-id="69df8a01-48c1-e85f-744c-375d7c6580a0" class="form-radio enter-adress w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom form-radio-button w-radio-input"></div><input type="radio" data-name="Delivery" id="Доставка по адресу" name="Delivery" value="Доставка по адресу" style="opacity:0;position:absolute;z-index:-1"><span for="Доставка по адресу" class="form-label w-form-label">Доставка по адресу</span></label></div>
+                <div class="cart-order-form-column cart-order-form-column_right w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack"><label data-w-id="69df8a01-48c1-e85f-744c-375d7c6580a5" class="form-radio choose-restaurant w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom form-radio-button w-radio-input"></div><input type="radio" data-name="Delivery" id="Самовывоз" name="Delivery" value="Самовывоз" style="opacity:0;position:absolute;z-index:-1"><span for="Самовывоз" class="form-label w-form-label">Самовывоз</span></label></div>
+              </div>
+              <div data-w-id="69df8a01-48c1-e85f-744c-375d7c6580a9" class="js-cart-order-form-column enter-address"><a href="#" class="cart-order-select-link cart-order-select-link_choose-city-link w-inline-block"><input type="text" class="form-text-field w-input" autocomplete="disabled" maxlength="256" name="EnterAdress-2" data-name="Enter Adress 2" placeholder="Введите адрес доставки" id="EnterAdress-2" required=""></a>
+                <div class="cart-order-select-inner cart-order-select-inner_enter-adress">
+                  <div data-w-id="69df8a01-48c1-e85f-744c-375d7c6580ad" class="select-close-icon w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+                  <div class="cart-order-form-columns cart-order-form-columns_inner w-row">
+                    <div data-w-id="69df8a01-48c1-e85f-744c-375d7c6580af" class="cart-order-form-column cart-order-form-column_left w-col w-col-6 w-col-medium-6 w-col-small-6"><label for="ChooseCity" class="form-label cart-order-label">Город/нас. пункт <span class="form-label_star">*</span>:</label><a href="#" class="cart-order-select-link w-inline-block w-clearfix"><input type="text" class="form-text-field form-text-field_select w-input" autocomplete="off" maxlength="256" name="EnterCity-2" data-name="Enter City 2" placeholder="Выберите город" id="EnterCity-2" required=""><img src="images/select.svg" alt="" class="cart-order-select-icon"></a>
+                      <div data-w-id="69df8a01-48c1-e85f-744c-375d7c6580b8" class="cart-order-select-inner-_sub-select cart-order-select-inner_top-margin">
+                        <div class="select-close-icon select-close-icon_cart-select w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+                        <div class="cart-order-select-inner-text">г. Москва</div>
+                        <div class="cart-order-select-inner-text">г. Люберцы</div>
+                        <div class="cart-order-select-inner-text">г. Балашиха</div>
+                        <div class="cart-order-select-inner-text">г. Королёв</div>
+                        <div class="cart-order-select-inner-text">г. Зеленоград</div>
+                      </div>
+                    </div>
+                    <div class="cart-order-form-column cart-order-form-column_right w-col w-col-6 w-col-medium-6 w-col-small-6"><label for="ChooseCity" class="form-label cart-order-label">Улица <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field w-input" autocomplete="off" maxlength="256" name="EnterStreet-4" data-name="Enter Street 4" placeholder="Название улицы" id="EnterStreet-4" required=""></div>
+                  </div>
+                  <div class="cart-order-form-columns cart-order-form-columns_inner w-row">
+                    <div class="cart-order-form-column cart-order-form-column_left w-col w-col-4 w-col-small-4"><label for="EnterHouse" class="form-label cart-order-label">Дом <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field w-input" maxlength="256" name="EnterHouse-4" data-name="Enter House 4" placeholder="№ дома" id="EnterHouse-4" required=""></div>
+                    <div class="cart-order-form-column cart-order-form-column_center w-col w-col-4 w-col-small-4"><label for="EnterSection" class="form-label cart-order-label">Подъезд <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field w-input" maxlength="256" name="EnterSection-4" data-name="Enter Section 4" placeholder="№ подъезда" id="EnterSection-4" required=""></div>
+                    <div class="cart-order-form-column cart-order-form-column_right w-col w-col-4 w-col-small-4"><label for="EnterFloor" class="form-label cart-order-label">Этаж <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field w-input" maxlength="256" name="EnterFloor-4" data-name="Enter Floor 4" placeholder="№ этажа" id="EnterFloor-4" required=""></div>
+                  </div>
+                  <div class="cart-order-form-columns cart-order-form-columns_inner w-row">
+                    <div class="cart-order-form-column cart-order-form-column_left w-col w-col-6 w-col-small-6"><label for="EnterFlat" class="form-label cart-order-label">Квартира <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field w-input" maxlength="256" name="EnterFlat-4" data-name="Enter Flat 4" placeholder="№ квартиры" id="EnterFlat-4" required=""></div>
+                    <div class="cart-order-form-column cart-order-form-column_right w-col w-col-6 w-col-small-6"><label for="EnterHousePhone" class="form-label cart-order-label">Домофон:</label><input type="text" maxlength="256" name="EnterHousePhone-4" data-name="Enter House Phone 4" placeholder="Номер домофона" id="EnterHousePhone-4" class="form-text-field w-input"></div>
+                  </div>
+                  <div class="cart-order-form-columns cart-order-form-columns_inner w-row">
+                    <div class="cart-order-form-column cart-order-form-column_left w-col w-col-6 w-col-small-6"><a href="#" class="button button_cart-order-form w-button">Ввести адрес</a></div>
+                    <div class="cart-order-form-column cart-order-form-column_right w-col w-col-6 w-col-small-6"><a href="#" class="button button_cart-order-form button_border-button w-button">отмена</a></div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="69df8a01-48c1-e85f-744c-375d7c6580f5" class="js-cart-order-form-column choose-restaurant"><a data-w-id="69df8a01-48c1-e85f-744c-375d7c6580f6" href="#" class="cart-order-select-link w-inline-block w-clearfix"><input type="text" class="form-text-field form-text-field_select w-input" maxlength="256" name="ChooseRestaurant-2" data-name="Choose Restaurant 2" placeholder="Выберите ресторан" id="ChooseRestaurant-2" required=""><img src="images/select.svg" alt="" class="cart-order-select-icon"></a>
+                <div class="cart-order-select-inner">
+                  <div data-w-id="69df8a01-48c1-e85f-744c-375d7c6580fa" class="select-close-icon w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+                  <div class="cart-order-select-inner-text">г. Москва, ул. Бартеневская, 39</div>
+                  <div class="cart-order-select-inner-text">г. Люберцы, ул. Кирова, 26</div>
+                  <div class="cart-order-select-inner-text">Московская обл., г. Балашиха, ул. Объединения, 6а</div>
+                  <div class="cart-order-select-inner-text">г. Королев, ул. Пионерская, 33а</div>
+                  <div class="cart-order-select-inner-text">г. Москва, ЗЕЛАО, Георгиевский пр-т, д.3</div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-order-form-part">
+              <div class="cart-order-form-columns w-row">
+                <div class="js-cart-order-form-column cart-order-form-column_left w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack"><label for="EnterName" class="form-label cart-order-label">Ваше имя <span class="form-label_star">*</span>:</label><input type="text" maxlength="256" name="EnterName-2" data-name="Enter Name 2" placeholder="Введите Ваше имя" id="EnterName-2" class="form-text-field w-input"></div>
+                <div class="js-cart-order-form-column cart-order-form-column_right w-col w-col-6 w-col-small-6 w-col-tiny-tiny-stack"><label for="EnterPhone" class="form-label">Ваш телефон <span class="form-label_star">*</span>:</label><input type="tel" maxlength="256" name="EnterPhone-2" data-name="Enter Phone 2" placeholder="8 (___) ___-__-__" id="EnterPhone-2" class="form-text-field w-input"></div>
+              </div>
+            </div>
+            <div class="cart-order-form-part">
+              <div class="cart-order-form-columns w-row">
+                <div class="js-cart-order-form-column cart-order-form-column_left w-col w-col-8 w-col-small-8 w-col-tiny-tiny-stack"><label for="EnterEmail" class="form-label cart-order-label">Ваш email<span class="form-label_star">*</span>:</label><input type="email" class="form-text-field w-input" maxlength="256" name="EnterEmail-2" data-name="Enter Email 2" placeholder="name@domain.zone" id="EnterEmail-2" required=""></div>
+                <div class="js-cart-order-form-column cart-order-form-column_right w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><label for="EnterName" class="form-label cart-order-label form-label_center">Персон <span class="form-label_star">*</span>:</label>
+                  <div class="count count_cart-form w-row">
+                    <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                      <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11H16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                    </div>
+                    <div class="count-column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                      <div class="count-value">1</div>
+                    </div>
+                    <div class="count-column w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                      <div class="count-button w-embed"><button class="count-button"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="10.5" stroke="#554045"></circle>
+<path d="M6 11H11M16 11H11M11 11V6V16" stroke="#554045" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-order-form-part">
+              <div data-w-id="69df8a01-48c1-e85f-744c-375d7c65812d" class="js-cart-order-form-column"><label for="name" class="form-label cart-order-label">Cпособ оплаты <span class="form-label_star">*</span>:</label><a href="#" class="cart-order-select-link w-inline-block w-clearfix"><input type="text" class="form-text-field form-text-field_select w-input" maxlength="256" name="ChoosePayMethod-2" data-name="Choose Pay Method 2" placeholder="Выберите способ оплаты" id="ChoosePayMethod-2" required=""><img src="images/selection-icon.svg" alt="" class="cart-order-select-icon"></a>
+                <div class="cart-order-select-inner cart-order-select-inner_top-margin">
+                  <div data-w-id="69df8a01-48c1-e85f-744c-375d7c658137" class="select-close-icon w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+                  <div class="cart-order-select-inner-text">Наличными при получении</div>
+                  <div class="cart-order-select-inner-text">Банковской картой при получении</div>
+                  <div class="cart-order-select-inner-text">Банковской картой на сайте</div>
+                </div>
+              </div><label for="name" class="form-label form-label_cash-size">Номиналы купюр <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field form-text-field_cash-size w-input" maxlength="256" name="EnterCash-2" data-name="Enter Cash 2" placeholder="Нужно для рассчёта сдачи" id="EnterCash-2" required=""></div>
+            <div class="cart-order-form-part"><label for="EnterComment" class="form-label cart-order-label">Комментарий к заказу:</label><textarea placeholder="Введите комментарий к заказу. Это может быть расположение подъезда, удобный проход к дому или код от домофона." maxlength="5000" id="EnterComment-2" name="EnterComment-2" data-name="Enter Comment 2" class="form-text-field text-area w-input"></textarea></div><input type="submit" value="Оформить заказ" data-wait="Подождите секунду.." class="cart-order-submit w-button"></form>
+          <div class="form-sucess w-form-done">
+            <div class="decoration-border sucess-decor">
+              <div class="p p_message"><span class="p_sucess">СПАСИБО!</span> Ваш заказ отправлен успешно! Наш менеджер свяжется с вами в ближайшее время для подтверждения заказа и уточнения деталей.</div>
+            </div>
+          </div>
+          <div class="order-form-warning w-form-fail">
+            <div class="decoration-border order-form-warning-decor">
+              <div class="p p_message"><span class="p_warning">Внимание!</span> Что-то пошло не так! Проверьте пожалуйста правильность заполнения всех обязательных полей и попробуйте отправку еще раз.</div>
+            </div>
+            <div class="order-form-warning-after w-embed"><svg width="20" height="10" viewbox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 10L0 0H20L10 10Z" fill="white"></path>
+</svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-menu fixed-menu_visible">
+    <div class="main-top w-row">
+      <div class="logo-main ligo-main_fixed w-col w-col-1 w-col-small-1 w-col-tiny-4"><img src="images/logo-white.svg" alt="" class="logo-img logo-img_fixed"></div>
+      <div class="menu-main w-col w-col-10 w-col-small-10 w-col-tiny-4">
+        <div class="menu-icon menu-icon_fixed-menu">
+          <div class="menu-icon-img w-embed"><svg width="18" height="14" viewbox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 7H17" stroke="#FFFFFF" stroke-linecap="round"></path>
+<path d="M1 1H17" stroke="#FFFFFF" stroke-linecap="round"></path>
+<path d="M1 13H17" stroke="#FFFFFF" stroke-linecap="round"></path>
+</svg></div>
+        </div>
+        <div class="menu-list menu-list_fixed menu-list__main-fixed">
+          <div class="select-close-icon select-close-icon_sub-menu w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+          <div class="menu-item"><a href="#" class="menu-item-link">главная</a></div>
+          <div class="menu-item"><a href="#" class="menu-item-link">меню доставки</a>
+            <nav class="sub-menu w-clearfix">
+              <div class="menu-item menu-item_submenu"><a href="#" class="menu-item-link menu-item-link_sub-menu">Горячие закуски</a></div>
+              <div class="menu-item menu-item_submenu"><a href="#" class="menu-item-link menu-item-link_sub-menu">Горячие блюда</a></div>
+              <div class="menu-item menu-item_submenu"><a href="#" class="menu-item-link menu-item-link_sub-menu">Супы</a></div>
+              <div class="menu-item menu-item_submenu"><a href="#" class="menu-item-link menu-item-link_sub-menu">Салаты</a></div>
+              <div class="menu-item menu-item_submenu menu-item-has-children"><a href="#" class="menu-item-link menu-item-link_sub-menu">Напитки</a>
+                <nav class="sub-menu sub-menu_3rd-sub w-clearfix">
+                  <div class="menu-item menu-item_submenu"><a href="#" class="menu-item-link menu-item-link_sub-menu">Домашние лимонады</a></div>
+                  <div class="menu-item menu-item_submenu"><a href="#" class="menu-item-link menu-item-link_sub-menu">Соки/ВОДЫ</a></div>
+                </nav>
+              </div>
+            </nav>
+          </div>
+          <div class="menu-item"><a href="#" class="menu-item-link">Акции</a></div>
+          <div class="menu-item"><a href="#" class="menu-item-link">События</a></div>
+          <div class="menu-item"><a href="#" class="menu-item-link">Контактная информация</a></div>
+        </div>
+      </div>
+      <div class="cart-main w-clearfix w-col w-col-1 w-col-small-1 w-col-tiny-4">
+        <div class="js-cart-icon cart-icon_fixed">
+          <div class="cart-icon__price-value">15 248 ₽</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-line">
+    <div class="top-columns w-row">
+      <div class="top-left-column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+        <div class="h4 h4_top-label">Телефон приёмной:</div>
+        <div class="h4 h4_top-value"><span class="fa-phone-alt"></span> <a href="tel:+74957893656" class="top-link">+7 495 789 36 56</a></div>
+      </div>
+      <div class="top-right-column w-clearfix w-col w-col-6 w-col-small-6 w-col-tiny-6">
+        <div class="js-fixed-area fixed-area_lk-enter">
+          <div class="js-fixed-area-container w-container">
+            <div class="popup-block popup-block_lk-enter">
+              <div class="select-close-icon select-close-icon_lk-enter w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+              <div class="lk-enter-form-area w-form">
+                <form id="email-form" name="email-form" data-name="Email Form" class="lk-enter-form"><label for="LkEnterPhone-3" class="form-label form-label_lk-enter">Введите номер телефона чтобы войти или зарегистрироваться</label><input type="tel" class="form-text-field lk-enter-field w-input" maxlength="256" name="LkEnterPhone-2" data-name="Lk Enter Phone 2" placeholder="Введите Ваш номер телефона" id="LkEnterPhone-2" required=""><input type="submit" value="получить sms" data-wait="Ожидайте SMS..." class="button button_lk-enter w-button"></form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="js-fixed-area fixed-area_cities">
+          <div class="js-fixed-area-container w-container">
+            <div class="popup-block popup-block_cities">
+              <div class="select-close-icon select-close-icon_cities w-embed"><svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.850009 0.143261C0.654747 -0.0520009 0.343287 -0.0470388 0.154344 0.154344C-0.0345985 0.355728 -0.0294758 0.677272 0.165786 0.872534L7.30115 8.0079L0.143261 15.1658C-0.0520009 15.361 -0.0470388 15.6725 0.154344 15.8615C0.355728 16.0504 0.677272 16.0453 0.872534 15.85L8.0079 8.71465L15.1658 15.8725C15.361 16.0678 15.6725 16.0628 15.8615 15.8615C16.0504 15.6601 16.0453 15.3385 15.85 15.1433L8.71465 8.0079L15.8725 0.85001C16.0678 0.654746 16.0628 0.343288 15.8615 0.154345C15.6601 -0.0345981 15.3385 -0.0294765 15.1433 0.165787L8.0079 7.30115L0.850009 0.143261Z" fill="#554045"></path>
+</svg></div>
+              <ul role="list" class="cities-list">
+                <li class="cities-list-item"><a href="#" class="cities-list-item-link"><span class="fa-map-marker-alt fa-map-marker-alt_right-margin"></span>Коммуналка</a></li>
+                <li class="cities-list-item"><a href="#" class="cities-list-item-link"><span class="fa-map-marker-alt fa-map-marker-alt_right-margin"></span>Гастроном</a></li>
+                <li class="cities-list-item"><a href="#" class="cities-list-item-link"><span class="fa-map-marker-alt fa-map-marker-alt_right-margin"></span>Восточный базар</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><a href="#" class="lang">EN<br>‍</a>
+        <a href="#" class="js-top-links top-links_lk-link w-inline-block">
+          <div class="p p_top-links-mobile"></div>
+          <div class="p p_top-links"><span class="fa-user-alt"></span>Личный кабинет</div>
+        </a>
+        <a href="#" class="js-top-links top-links_cities-link w-inline-block">
+          <div class="p p_top-links-mobile"></div>
+          <div class="p p_top-links"><span class="fa-map-marker-alt"></span>Доставка из ресторанов</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="restaurant-top">
+    <div class="swiper-container_res-gallery">
+      <div class="swiper-wrapper swiper-wrapper_res_gallery">
+        <div class="swiper-slide swiper-slide_res-gallery">
+          <div data-poster-url="videos/Kommunalka_web-poster-00001.jpg" data-video-urls="videos/Kommunalka_web-transcode.mp4,videos/Kommunalka_web-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="video-bg w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/Kommunalka_web-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="videos/Kommunalka_web-transcode.mp4" data-wf-ignore="true"><source src="videos/Kommunalka_web-transcode.webm" data-wf-ignore="true"></video></div>
+          <div class="gallery-shadow"></div><img src="images/logo-slider.png" alt="" class="res-gallery-logo">
+          <div class="main-social"><a href="#" class="main-social-link"></a><a href="#" class="main-social-link"></a><a href="#" class="main-social-link"></a><a href="#" class="main-social-link"></a><a href="#" class="main-social-link res-gallery-social-link_fa400"></a></div>
+          <h1 class="opening-text">Коммуналка — это новый ностальгический формат заведения в Калуге</h1>
+          <div class="res-gallery-adress"><span class="res-gallery-adress_icon"></span> Гостинорядский переулок, д.13/1</div>
+        </div>
+        <div class="swiper-slide swiper-slide_res-gallery"><img src="images/VIVpB19y5gk.jpg" alt="" class="video-bg">
+          <div class="gallery-shadow"></div><img src="images/logo-slider.png" alt="" class="res-gallery-logo">
+          <div class="main-social"><a href="#" class="main-social-link"></a><a href="#" class="main-social-link"></a><a href="#" class="main-social-link"></a><a href="#" class="main-social-link"></a><a href="#" class="main-social-link res-gallery-social-link_fa400"></a></div>
+          <h1 class="opening-text">Коммуналка — это новый ностальгический формат заведения в Калуге</h1>
+          <div class="res-gallery-adress"><span class="res-gallery-adress_icon"></span> Гостинорядский переулок, д.13/1</div>
+        </div>
+      </div>
+      <div class="swiper-gallery-navigation-area main-container">
+        <div class="swiper-gallery-navigation-arrow swiper-button-prev_res-gallery">
+          <div class="res-gallery-arrow w-embed"><svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 1L1 7L7 13" stroke="#091421" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div>
+        </div>
+        <div class="swiper-pagination swiper-pagination_res-gallery"></div>
+        <div class="swiper-gallery-navigation-arrow swiper-button-next_res-gallery">
+          <div class="res-gallery-arrow w-embed"><svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L7 7L0.999999 1" stroke="#091421" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div>
+        </div>
+        <div class="pagination-decor pagination-decor_inner80"></div>
+      </div>
+    </div>
+    <div class="main-container decoration-container">
+      <div class="decoration-border decoration-border_white-block decoration-border_restaurant-icon-block">
+        <div class="white-shadowed-block restaurant-top-icons-block">
+          <div class="w-layout-grid restaurant-top-icons">
+            <div class="restaurant-top-icon-block"><img src="images/icon-3.svg" alt="" class="restaurant-top-icon">
+              <div class="h5 h5_top-res-icon">Доставка</div>
+            </div>
+            <div class="restaurant-top-icon-block"><img src="images/icon-4.svg" alt="" class="restaurant-top-icon">
+              <div class="h5 h5_top-res-icon">Спортивные трансляции</div>
+            </div>
+            <div class="restaurant-top-icon-block"><img src="images/icon-5.svg" alt="" class="restaurant-top-icon">
+              <div class="h5 h5_top-res-icon">Барное меню</div>
+            </div>
+            <div class="restaurant-top-icon-block"><img src="images/icon-6.svg" alt="" class="restaurant-top-icon">
+              <div class="h5 h5_top-res-icon">Мастер классы</div>
+            </div>
+            <div class="restaurant-top-icon-block"><img src="images/icon-2.svg" alt="" class="restaurant-top-icon">
+              <div class="h5 h5_top-res-icon">Детская комната</div>
+            </div>
+            <div class="restaurant-top-icon-block"><img src="images/icon-1.svg" alt="" class="restaurant-top-icon">
+              <div class="h5 h5_top-res-icon">Караоке</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="res-about" class="restaurant-description">
+    <div class="main-container h2-container w-row">
+      <div class="heading-separator-left w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+      <div class="heading-block w-col w-col-8">
+        <h2 class="h2 h2_light">Залы ресторана</h2>
+      </div>
+      <div class="heading-separator-right w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="page-content-columns w-row">
+        <div class="page-content w-col w-col-7">
+          <p class="p">Если Вы решили организовать свадьбу, юбилей или банкет в Люберцах, обратите внимание на потрясающее кафе-чайхану «Дюшес». Ее можно сравнить с модным развлекательным комплексом, выполненным в восточном стиле. Это великолепное заведение, предлагающее отдых по различным направлениям.</p>
+          <h2 class="h3 h3_light">Заголовок h3</h2>
+          <p class="p">Удивить современного обывателя достаточно сложно. Огромное число ресторанов и кафе предлагают многообразие интерьеров, стилистик и гастрономических направлений. В Люберцах сосредоточено немало мест для отдыха, однако только «Дюшес» способен удивить первоклассным сервисом и восточным гостеприимством.<br></p>
+          <p class="p">Это удивительное заведение, состоящее из нескольких банкетных залов, летней и зимней веранд, зоны для кальяна, караоке и холла. Двери чайханы современного формата открыты для гостей без выходных. Здесь можно заказать свадьбу в Люберцах, устроить детское день рождение или же отдохнуть в компании с близкими людьми.<br></p>
+          <h2 class="h3 h3_light">«Коммуналка» позволит:</h2>
+          <ul role="list" class="text-ul">
+            <li class="text-li">насладиться изысканными блюдами 4 кухонь;</li>
+            <li class="text-li">попробовать лучшие кальянные смеси;</li>
+            <li class="text-li">выпить кофе или вина на одной из веранд;</li>
+            <li class="text-li">отпраздновать событие в банкетном зале;</li>
+            <li class="text-li">спеть хиты российской и зарубежной эстрады.</li>
+          </ul>
+          <p class="p">Также можно заказать доставку еды в Люберцах, предварительно оставив заявку по телефону или на сайте.<br></p>
+        </div>
+        <div class="page-empty w-col w-col-1"></div>
+        <div class="page-sidebar w-col w-col-4">
+          <div class="decoration-border decoration-border_white-block">
+            <div class="white-shadowed-block page-sidebar-area">
+              <div class="page-sidebar-content">
+                <h3 class="category-item-name category-item-name_page-sidebar">Как нас найти:</h3>
+                <p class="p p_adress"><span class="p_fa-icon"></span>Гостинорядский пер., д. 13/1<br><span class="p_fa-icon"></span>+7 (495) 646-68-58<br><span class="p_fa-icon"></span><span class="p_red">info@dushes-cafe.ru</span><br><span class="p_fa-icon"></span>10:00 — 06:00</p>
+                <div class="sidebar-map w-embed w-script">
+                  <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abfe50831eb74f6a0df8146a6d20b131335dc266264d931f15aae76ca451100eb&amp;width=100%25&amp;height=260&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/sidebar-decor.svg" alt="" class="sidebar-bottom-img"></div>
+      </div>
+    </div>
+  </div>
+  <div id="res-menu" class="restaurant-menu">
+    <div class="main-container h2-container w-row">
+      <div class="heading-separator-left w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+      <div class="heading-block w-col w-col-8">
+        <h2 class="h2 h2_light">Меню ресторана</h2>
+      </div>
+      <div class="heading-separator-right w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+    </div>
+    <div class="main-container w-row">
+      <div class="content-slider-block-column content-slider-block-column_left content-slider-block-column_min-h-575 w-col w-col-1 w-col-small-1">
+        <div class="swiper-navigation-arrow swiper-button-prev_content-slider">
+          <div class="res-menu-arrow w-embed"><svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 1L1 7L7 13" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div>
+        </div>
+      </div>
+      <div class="content-slider-block-column content-slider-block-column_center w-col w-col-10 w-col-small-10">
+        <div class="decoration-border decoration-border_white-block content-slider-slides">
+          <div class="white-shadowed-block res-menu-slides swiper-container_content-slider">
+            <div class="swiper-wrapper res-content-slider-swiper-wrapper">
+              <div class="swiper-slide res-menu-sllide"><a data-fancybox="res-menu" href="images/kitchen.jpg" class="res-menu-img-link w-inline-block"><img src="images/kitchen.jpg" srcset="images/kitchen-p-500.jpeg 500w, images/kitchen-p-800.jpeg 800w, images/kitchen-p-1080.jpeg 1080w, images/kitchen.jpg 1528w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 78vw, 757.328125px" alt="" class="res-menu-img"></a></div>
+              <div class="swiper-slide res-menu-sllide"><a data-fancybox="res-menu" href="images/bar.jpg" class="res-menu-img-link w-inline-block"><img src="images/bar.jpg" srcset="images/bar-p-500.jpeg 500w, images/bar-p-800.jpeg 800w, images/bar-p-1080.jpeg 1080w, images/bar.jpg 1528w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 78vw, 757.328125px" alt="" class="res-menu-img"></a></div>
+            </div>
+          </div>
+          <div class="pagination-decor pagination-decor_black pagination-decor_outer40"></div>
+          <div class="swiper-pagination swiper-pagination_black swiper-pagination_min70 swiper-pagination_content-slider"></div>
+        </div>
+      </div>
+      <div class="content-slider-block-column content-slider-block-column_right content-slider-block-column_min-h-575 w-col w-col-1 w-col-small-1">
+        <div class="swiper-navigation-arrow swiper-button-next_content-slider">
+          <div class="res-menu-arrow w-embed"><svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L7 7L0.999999 1" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div>
+        </div>
+      </div>
+    </div><img src="images/menu-decor.svg" alt="" class="res-menu-decor"></div>
+  <div id="res-actions" class="actions-content">
+    <div class="main-container h2-container w-row">
+      <div class="heading-separator-left w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+      <div class="heading-block w-col w-col-8">
+        <h2 class="h2 h2_light">АКЦИИ ресторана</h2>
+      </div>
+      <div class="heading-separator-right w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="w-layout-grid more-actions-grid">
+        <div class="action-block">
+          <a href="#" class="decoration-border decoration-border_white-block w-inline-block">
+            <div class="white-shadowed-block white-shadowed-block_action">
+              <div class="action-image-block"><img src="images/action-sample.png" alt="" class="action-image"></div>
+            </div>
+          </a>
+          <a href="#" class="decoration-border decoration-border_white-block action-hover w-inline-block">
+            <div class="white-shadowed-block white-shadowed-block_action-hover">
+              <div class="category-item-name category-item-name_action-hover"> Акция «Сюрприз»</div>
+              <p class="p p_action-description">Вы оформляете заказ доставки впервые? Мы рады новому знакомству! При оформлении первого заказа на доставку у оператора колл-центра или на нашем сайте, Вы получаете в подарок сладкий сюрприз!</p>
+            </div>
+          </a>
+        </div>
+        <div class="action-block">
+          <a href="#" class="decoration-border decoration-border_white-block w-inline-block">
+            <div class="white-shadowed-block white-shadowed-block_action">
+              <div class="action-image-block"><img src="images/action-sample.png" alt="" class="action-image"></div>
+            </div>
+          </a>
+          <a href="#" class="decoration-border decoration-border_white-block action-hover w-inline-block">
+            <div class="white-shadowed-block white-shadowed-block_action-hover">
+              <div class="category-item-name category-item-name_action-hover"> Акция «Сюрприз»</div>
+              <p class="p p_action-description">Вы оформляете заказ доставки впервые? Мы рады новому знакомству! При оформлении первого заказа на доставку у оператора колл-центра или на нашем сайте, Вы получаете в подарок сладкий сюрприз!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="more-events">
+    <div class="main-container h2-container w-row">
+      <div class="heading-separator-left w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+      <div class="heading-block w-col w-col-8">
+        <h2 class="h2 h2_light">События ресторана</h2>
+      </div>
+      <div class="heading-separator-right w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+    </div>
+    <div class="main-container restaurants-container">
+      <div class="w-layout-grid more-events-grid">
+        <a href="#" class="multiple-block w-inline-block">
+          <div class="multiple-preview-block">
+            <div class="decoration-border decoration-border_multiple"><img src="images/image-7.png" alt="" class="multiple-preview"></div>
+          </div>
+          <h3 class="category-item-name category-item-name_multiple">Новый год в коммуналке</h3>
+          <p class="p p_multiple"><span class="p_fa-icon"></span>31 декабря 2019 года<br></p>
+        </a>
+        <a href="#" class="multiple-block w-inline-block">
+          <div class="multiple-preview-block">
+            <div class="decoration-border decoration-border_multiple"><img src="images/image-8.png" alt="" class="multiple-preview"></div>
+          </div>
+          <h3 class="category-item-name category-item-name_multiple">Осеннее меню</h3>
+          <p class="p p_multiple"><span class="p_fa-icon"></span>с 1 сентября 2019 года по 30 ноября 2019 года<br></p>
+        </a>
+        <a href="#" class="multiple-block w-inline-block">
+          <div class="multiple-preview-block">
+            <div class="decoration-border decoration-border_multiple"><img src="images/image-9.png" alt="" class="multiple-preview"></div>
+          </div>
+          <h3 class="category-item-name category-item-name_multiple">Осеннее меню</h3>
+          <p class="p p_multiple"><span class="p_fa-icon"></span>с 1 сентября 2019 года по 30 ноября 2019 года<br></p>
+        </a>
+        <a href="#" class="multiple-block w-inline-block">
+          <div class="multiple-preview-block">
+            <div class="decoration-border decoration-border_multiple"><img src="images/image-7.png" alt="" class="multiple-preview"></div>
+          </div>
+          <h3 class="category-item-name category-item-name_multiple">Новый год в коммуналке</h3>
+          <p class="p p_multiple"><span class="p_fa-icon"></span>31 декабря 2019 года<br></p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="res-photos">
+    <div class="main-container h2-container w-row">
+      <div class="heading-separator-left w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+      <div class="heading-block w-col w-col-8">
+        <h2 class="h2 h2_light">фотографии ресторана</h2>
+      </div>
+      <div class="heading-separator-right w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+    </div>
+    <div class="main-container photo-gallery-container">
+      <div class="photo-gallery-grid"><a data-fancybox="res-photo" id="w-node-c64f112dd3e9-1cffc14a" href="images/IMG_2509.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2509.jpg" srcset="images/IMG_2509-p-500.jpeg 500w, images/IMG_2509-p-1080.jpeg 1080w, images/IMG_2509.jpg 1200w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 487.5px, 517.5px" alt="" class="photo-gallery-img-big"></a><a data-fancybox="res-photo" id="w-node-83428a40a86f-1cffc14a" href="images/IMG_2470.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2470.jpg" srcset="images/IMG_2470-p-500.jpeg 500w, images/IMG_2470-p-1080.jpeg 1080w, images/IMG_2470.jpg 1200w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 240px, 255px" alt="" class="photo-gallery-img-small"></a><a data-fancybox="res-photo" id="w-node-f46b633ed42f-1cffc14a" href="images/IMG_2628.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2628.jpg" srcset="images/IMG_2628-p-500.jpeg 500w, images/IMG_2628-p-1080.jpeg 1080w, images/IMG_2628.jpg 1200w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 240px, 255px" alt="" class="photo-gallery-img-small"></a><a data-fancybox="res-photo" id="w-node-7479c694d649-1cffc14a" href="images/IMG_2532.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2532.jpg" srcset="images/IMG_2532-p-500.jpeg 500w, images/IMG_2532.jpg 533w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 216.515625px, (max-width: 991px) 28vw, 229.84375px" alt="" class="photo-gallery-img-big"></a><a data-fancybox="res-photo" id="w-node-b730071dd948-1cffc14a" href="images/IMG_2568.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2568.jpg" srcset="images/IMG_2568-p-1080.jpeg 1080w, images/IMG_2568.jpg 1200w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 240px, 255px" alt="" class="photo-gallery-img-small"></a><a data-fancybox="res-photo" id="w-node-0bf7f2931075-1cffc14a" href="images/IMG_2317.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2317.jpg" srcset="images/IMG_2317-p-500.jpeg 500w, images/IMG_2317-p-1080.jpeg 1080w, images/IMG_2317.jpg 1200w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 240px, 255px" alt="" class="photo-gallery-img-small"></a><a data-fancybox="res-photo" id="w-node-4044aa7a2738-1cffc14a" href="images/IMG_2239.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2239.jpg" srcset="images/IMG_2239-p-500.jpeg 500w, images/IMG_2239.jpg 533w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 216.515625px, (max-width: 991px) 28vw, 229.84375px" alt="" class="photo-gallery-img-big"></a><a data-fancybox="res-photo" id="w-node-866101053131-1cffc14a" href="images/IMG_2553.jpg" class="photo-gallery-img-link w-inline-block"><img src="images/IMG_2553.jpg" srcset="images/IMG_2553-p-500.jpeg 500w, images/IMG_2553-p-1080.jpeg 1080w, images/IMG_2553.jpg 1200w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 487.5px, 517.5px" alt="" class="photo-gallery-img-big"></a></div>
+    </div>
+    <div class="main-container h2-container w-row">
+      <div class="heading-separator-left heading-decor-sep w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+      <div class="heading-block w-col w-col-8"><img src="images/sep.svg" alt="" class="heading-decor"></div>
+      <div class="heading-separator-right heading-decor-sep w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+    </div>
+  </div>
+  <div id="res-menu" class="restaurant-reviews">
+    <div class="main-container w-row">
+      <div class="content-slider-block-column content-slider-block-column_left content-slider-block-column_min-h-420 w-col w-col-1 w-col-small-1">
+        <div class="swiper-navigation-arrow swiper-button-prev_review-slider">
+          <div class="res-menu-arrow w-embed"><svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 1L1 7L7 13" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div>
+        </div>
+      </div>
+      <div class="content-slider-block-column content-slider-block-column_center w-col w-col-10 w-col-small-10">
+        <div class="decoration-border decoration-border_white-block content-slider-slides">
+          <div class="white-shadowed-block white-shadowed-block_reviews swiper-container_review-slider">
+            <div class="swiper-wrapper reviews-slider-swiper-wrapper">
+              <div class="swiper-slide reviews-slide">
+                <p class="p p_italic">Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.</p>
+                <p class="p p_italic">Таким образом начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Идейные соображения высшего порядка, а также консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет оценить значение направлений прогрессивного развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий в значительной степени обуславливает создание дальнейших направлений развития.</p>
+                <div class="review-top">
+                  <div class="review-name">
+                    <div class="category-item-name category-item-name_review">Елена Иванова</div>
+                    <div class="p p_review-date">15 октября 2018</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide reviews-slide">
+                <p class="p p_italic">Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также консультация с широким активом позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
+                <div class="review-top">
+                  <div class="review-name">
+                    <div class="category-item-name category-item-name_review">Елена Иванова</div>
+                    <div class="p p_review-date">15 октября 2018</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-after w-embed"><svg width="24" height="12" viewbox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 12L0 0H24L12 12Z" fill="white"></path>
+</svg></div>
+          <div class="swiper-pagination swiper-pagination_black swiper-pagination_min70 swiper-pagination_review-slider"></div>
+        </div>
+      </div>
+      <div class="content-slider-block-column content-slider-block-column_right content-slider-block-column_min-h-420 w-col w-col-1 w-col-small-1">
+        <div class="swiper-navigation-arrow swiper-button-next_review-slider">
+          <div class="res-menu-arrow w-embed"><svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L7 7L0.999999 1" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="add-review-form">
+    <div class="main-container h2-container w-row">
+      <div class="heading-separator-left w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+      <div class="heading-block w-col w-col-8">
+        <h2 class="h2 h2_light">Оставить отзыв</h2>
+      </div>
+      <div class="heading-separator-right w-col w-col-2">
+        <div class="h2_separator"></div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="review-form-block w-form">
+        <form id="wf-form-ReviewForm" name="wf-form-ReviewForm" data-name="ReviewForm" class="review-form">
+          <div class="w-layout-grid review-form-grid"><input type="submit" value="Отправить отзыв" data-wait="Отправляю..." id="w-node-5132c48a3b05-1cffc14a" class="button button_reviews-button w-button">
+            <div id="w-node-5132c48a3b06-1cffc14a" class="review-form-input-block"><label for="ReviewPhone" class="form-label">Ваш телефон <span class="form-label_star">*</span>:</label><input type="tel" class="form-text-field form-text-field_review-text-field w-input" maxlength="256" name="ReviewPhone-2" data-name="Review Phone 2" placeholder="Введите Ваш телефон" id="ReviewPhone-2" required=""></div>
+            <div id="w-node-5132c48a3b0d-1cffc14a" class="review-form-input-block"><label for="ReviewOrder" class="form-label">Номер вашего заказа <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field form-text-field_review-text-field w-input" maxlength="256" name="ReviewOrder-2" data-name="Review Order 2" placeholder="Введите омер вашего заказа" id="ReviewOrder-2" required=""></div>
+            <div id="w-node-5132c48a3b14-1cffc14a" class="review-form-input-block"><label for="ReviewEmail" class="form-label">Ваш Email <span class="form-label_star">*</span>:</label><input type="email" class="form-text-field form-text-field_review-text-field w-input" maxlength="256" name="ReviewEmail-2" data-name="Review Email 2" placeholder="Введите Ваш email" id="ReviewEmail-2" required=""></div>
+            <div id="w-node-5132c48a3b1b-1cffc14a" class="review-form-input-block w-clearfix">
+              <div class="form-label form-label_review"><label for="ReviewPhone" class="form-label">Текст вашего отзыва <span class="form-label_star">*</span>:</label></div>
+              <div class="input-file-block w-embed">
+                <div><input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple=""></div>
+                <div><label for="file"><p>Приложить файл к отзыву<span> (не более 10Mb)</span></p></label></div>
+              </div>
+              <div><textarea placeholder="Напишите ваш отзыв" maxlength="5000" id="ReviewField-2" name="ReviewField-2" data-name="Review Field 2" required="" class="form-text-area form-text-area_reviews w-input"></textarea></div>
+            </div>
+            <div id="w-node-5132c48a3b25-1cffc14a" class="review-form-input-block"><label for="ReviewName" class="form-label">Ваше имя <span class="form-label_star">*</span>:</label><input type="text" class="form-text-field form-text-field_review-text-field w-input" maxlength="256" name="ReviewName-2" data-name="Review Name 2" placeholder="Введите Ваше имя" id="ReviewName-2" required=""></div>
+          </div>
+          <div class="p">Нажимая кнопку «Отправить отзыв», вы соглашаетесь с <a href="#" class="red-link">политикой обработки персональных данных</a></div>
+        </form>
+        <div class="form-sucess w-form-done">
+          <div class="decoration-border sucess-decor">
+            <div class="p"><span class="p_sucess">Спасибо! </span>Ваш отзыв получен и мы опубликуем его после небольшой проверки. Все отзывы проходят проверку и сразу он не появится.<br>Пожалуйста, не отправляйте его повторно несколько раз. </div>
+          </div>
+        </div>
+        <div class="form-error w-form-fail">
+          <div class="decoration-border error-decor">
+            <div class="p"><span class="p_warning">Внимание! </span>Во время отправки формы произошла ошибка. Пожалуйста проверьте правильность заполнения всех полей.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="main-container main-container_footer-container">
+      <div class="menu-list menu-list_footer-menu">
+        <div class="menu-item menu-item_footer-menu-item"><a href="#" class="menu-item-link menu-item-link_footer-menu">Условия оплаты и доставки</a></div>
+        <div class="menu-item menu-item_footer-menu-item"><a href="#" class="menu-item-link menu-item-link_footer-menu">Вакансии</a></div>
+        <div class="menu-item menu-item_footer-menu-item"><a href="#" class="menu-item-link menu-item-link_footer-menu">о нас</a></div>
+        <div class="menu-item menu-item_footer-menu-item"><a href="#" class="menu-item-link menu-item-link_footer-menu">Публичная оферта</a></div>
+        <div class="menu-item menu-item_footer-menu-item"><a href="#" class="menu-item-link menu-item-link_footer-menu">Политика конфиденциальности</a></div>
+      </div>
+      <div class="footer-columns w-row">
+        <div class="footer-left w-col w-col-5">
+          <p class="copyright">© 2019 Сеть ресторанов Кафе-Чайхана «Дюшес»</p>
+        </div>
+        <div class="footer-middle w-col w-col-3"><a href="#" class="footer-social-link"></a><a href="#" class="footer-social-link"></a><a href="#" class="footer-social-link"></a><a href="#" class="footer-social-link"></a><a href="#" class="footer-social-link footer-mail-link"></a></div>
+        <div class="footer-right w-col w-col-4">
+          <p class="copyright">Сделано в компании <a href="https://malton.ru/" target="_blank" class="footer-link">MALTON Tech.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5dc84e40205897366c85917d" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <style>
+  svg path {fill:inherit;stroke:inherit;stroke-width:inherit;}
+  svg circle {fill:inherit;stroke:inherit;stroke-width:inherit;}
+  .menu-item:last-child {border:none;}
+  .menu-slide:last-child .menu-slide-separator {display:none;}
+  .swiper-button-next, .swiper-button-prev {background:none;}
+  .arrow-left, .arrow-right, .count-button, .up-down-arrow {stroke: #142d38;}
+  .arrow-left:hover, .arrow-right:hover, .count-button:hover {stroke: #bd1818;}
+  .up-down-arrow, .main-slider-arrow {stroke: #FFFFFF;}
+  #rg-r2 {background-color:transparent;}
+  .close-icon path {fill: #FFFFFF;}
+  .cart-order-select-close-icon path {fill: #554045;}
+  .cart-order-select-close-icon:hover path {fill: #CA6E55;}
+  .simplebar-hover, .simplebar-scrollbar {width:4px; right:0px;}
+  .simplebar-track.simplebar-vertical, .simplebar-track.simplebar-horizontal {width:4px; background:#091421;}
+  .simplebar-scrollbar {background:#BD1818;}
+  .select-close-icon {stroke:#554045;}
+  .menu-icon-img {stroke:#FFFFFF;}
+  .text-ol li:before, .cities-list-item:before {display:none;}
+  ul li:before, .text-li:before {content: "\2014";color: #BD1818;display: inline-block;margin: 0 -12px 0 0;position: relative;left: -18px;}
+  .menu-item_breadcrumb:before {display:none;}
+  .swiper-gallery-navigation-arrow {stroke:#091421;}
+  .swiper-navigation-arrow {stroke:#FFFFFF;}
+  .swiper-gallery-navigation-arrow:hover {stroke:#FFFFFF;}
+  .swiper-pagination-bullet-active {background: #BD0113 !important;}
+  .swiper-pagination-bullet {width: 8px; height: 8px; background:#ffffff;opacity: 1;margin: 0 5px;}
+  .swiper-pagination_res-gallery .swiper-pagination-bullet {background: #091421;}
+  .inputfile {width: 0.1px;height: 0.1px;opacity: 0;overflow: hidden;position: absolute;z-index: -1;}
+  label[for="file"] {font-size:inherit; color: #CA6E55; font-weight:inherit; text-decoration: inherit; display: inline-block; cursor: pointer;}
+  label[for="file"] span {color:#A1817F; text-decoration: none;}
+  .inputfile:focus + label, .inputfile + label:hover {text-decoration: none; color: #554045;}
+  .yandex-map path {fill:rgba(255,210,30,0.6); stroke:rgba(255,147,30,0.9);}
+  .slider-arrow, .count-button {outline-style:none;}
+  @media screen and (max-width: 991px){
+  ul li:before, .text-li:before {content: "\2014";color: #BD1818;display: inline-block;margin: 0 -10px 0 0;position: relative;left: -14px;}
+  }
+  @media screen and (max-width: 479px) {
+  .swiper-pagination_res-gallery .swiper-pagination-bullet {background: #ffffff;}
+  }
+</style>
+  <script>
+  var menuOnPage = new Swiper('.swiper-container', {
+  // Optional parameters
+  slidesPerView: 5,
+  spaceBetween: 0,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  }
+  })
+  var menuFixed = new Swiper('.swiper-container_fixed', {
+  // Optional parameters
+  slidesPerView: 7,
+  spaceBetween: 0,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+  nextEl: '.swiper-button-next_fixed',
+  prevEl: '.swiper-button-prev_fixed',
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  }
+  })
+  var moreProducts = new Swiper('.swiper-container_products', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 0,
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next_products',
+      prevEl: '.swiper-button-prev_products',
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+    }
+  })
+  var ResEventGalery = new Swiper('.swiper-container_res-gallery', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    effect: 'fade',
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next_res-gallery',
+    prevEl: '.swiper-button-prev_res-gallery',
+    },
+    // pagination
+    pagination: {
+    el: '.swiper-pagination_res-gallery',
+    clickable: true,
+    },
+  })
+  var ResEventGalery = new Swiper('.swiper-container_main-slider', {
+    // Optional parameters
+    loop: true,
+    effect: 'fade',
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next_main-slider',
+    prevEl: '.swiper-button-prev_main-slider',
+    },
+    // pagination
+    pagination: {
+    el: '.swiper-pagination_main-slider',
+    clickable: true,
+    },
+  })
+  var ResEventGalery = new Swiper('.swiper-container_content-slider', {
+    // Optional parameters
+    loop: true,
+    effect: 'fade',
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next_content-slider',
+    prevEl: '.swiper-button-prev_content-slider',
+    },
+    // pagination
+    pagination: {
+    el: '.swiper-pagination_content-slider',
+    clickable: true,
+    },
+  })
+  var ResEventGalery = new Swiper('.swiper-container_review-slider', {
+    // Optional parameters
+    loop: true,
+    effect: 'slide',
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next_review-slider',
+    prevEl: '.swiper-button-prev_review-slider',
+    },
+    // pagination
+    pagination: {
+    el: '.swiper-pagination_review-slider',
+    clickable: true,
+    },
+  })
+  </script>
+  <script>
+ var inputs = document.querySelectorAll( '.js-file' );
+Array.prototype.forEach.call( inputs, function( inputParent )
+{
+	var input	 = inputParent.querySelector('.js-file__input'),
+		label	 = inputParent.querySelector('.js-file__label'),
+		labelVal = label.innerHTML;
+	input.addEventListener( 'change', function( e )
+	{
+		var fileName = '';
+		if( this.files && this.files.length > 1 )
+			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+		else
+			fileName = e.target.value.split( '\\' ).pop();
+		if( fileName )
+			label.querySelector( 'span' ).innerHTML = fileName;
+		else
+			label.innerHTML = labelVal;
+	});
+});
+</script>
+</body>
+</html>
