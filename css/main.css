@@ -55,3 +55,58 @@
 		color: #fff;
 	}
 }
+.h4.h4_top-value{
+	font-size: 10px;
+}
+.logo-img{
+	width: auto;
+	height: 40px;
+}
+.logo-img.logo-img_fixed{
+	border-radius: 0;
+}
+.fixed-menu{
+	background-color: #fff;
+}
+.menu-item-link{
+	color: #000;
+}
+.main-slider-taxt-block{
+	height: auto;
+}
+.swiper-wrapper.swiper-wrapper_main-slider{
+	min-height: 700px;
+}
+.main-slider_background{
+	width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+}
+@media(max-width: 500px){
+	.h4.h4_top-value{
+		font-size: 7px;
+		margin-right: 5px;
+	}
+	.top-left-column{
+		width: 55%;
+		display: flex;
+	}
+	.top-right-column{
+		width: 45%;
+	}
+	.lang{
+		width: 35px;
+	}
+	.js-top-links{
+		width: 35px;
+		right: 75px;
+	}
+	.js-top-links.top-links_cities-link{
+		width: 35px;
+		right: 70px;
+	}
+	.js-top-links.top-links_lk-link{
+		right: 35px;
+	}
+}
