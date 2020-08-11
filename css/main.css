@@ -96,3 +96,13 @@
 		right: 35px;
 	}
 }
+
+.fixed-menu{
+	background-color: #fff;
+}
+.menu-item-link{
+	color: #000;
+}
+.menu-item:hover > a{
+	color: #fff;
+}
