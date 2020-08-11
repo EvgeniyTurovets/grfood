@@ -47,14 +47,8 @@
 	display: none;
 	opacity: 1;
 }
-.menu-item-link:hover{
-	color: inherit;
-}
-@media(min-width: 1024px){
-	.menu-item-link:hover{
-		color: #fff;
-	}
-}
+
+
 .h4.h4_top-value{
 	font-size: 10px;
 }
@@ -65,12 +59,7 @@
 .logo-img.logo-img_fixed{
 	border-radius: 0;
 }
-.fixed-menu{
-	background-color: #fff;
-}
-.menu-item-link{
-	color: #000;
-}
+
 .main-slider-taxt-block{
 	height: auto;
 }
@@ -98,10 +87,7 @@
 	.lang{
 		width: 35px;
 	}
-	.js-top-links{
-		width: 35px;
-		right: 75px;
-	}
+	
 	.js-top-links.top-links_cities-link{
 		width: 35px;
 		right: 70px;
